@@ -1,0 +1,485 @@
+/* This style file has been created automatically per your request.
+
+The following pages can help you get started with CSS:
+* CSS Tutorial (http://w3schools.com/css/default.asp)
+* CSS3 Tutorial (http://w3schools.com/css3/default.asp)
+* CSS Reference (http://w3schools.com/cssref/default.asp) */
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 8px;
+  color: #2A2A2A;
+  text-align:left;
+  line-height: 1.5;
+}
+
+/* Import font from Google Web Fonts */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+a
+{
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #0D47A1;
+}
+
+a:hover
+{
+  color: #F44336;
+  text-decoration: none;
+}
+
+a:active
+{
+  color: #F44336;
+}
+
+a img
+{
+  border:0;
+}
+
+h1
+{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1F1F1F;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size: 40px;
+}
+
+h2
+{
+  font-family: 'Roboto Condensed', sans-serif;  
+  width: 100%;
+  text-align: left;
+  color: #303030;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul
+{
+  list-style-type:disc;
+  padding-left: 40px;
+}
+
+ul li
+{
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  vertical-align: middle;
+}
+
+ul li p
+{
+  color: black;
+  margin: 0;
+}
+
+ol
+{
+  padding-left: 40px;
+}
+
+ol li
+{
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* --- Custom classes --- */
+
+.screenshot
+{
+  box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.75);
+}
+
+/* Start Page */
+
+.startBanner
+{
+  background: #fff url('../Images/Startbanner.png') repeat-x;
+  width:100%;
+  min-height: 110px;
+  margin: 0;
+  padding: 10px;
+  padding-top: 75px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px)
+{
+  .startBanner  
+  {
+    padding-top: 20px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: auto;
+  }
+}
+
+.startTileWrapper p
+{
+  padding-left: 10px;
+  text-align:left;
+}
+
+.startTileWrapper a
+{
+ color: #fff;
+ text-decoration: none;
+}
+
+.startTileWrapper a:hover
+{
+  text-decoration:underline;
+}
+
+.startTileWrapper
+{
+  overflow:hidden;
+}
+
+.startTileWrapper h2
+{
+  border-top: none; 
+  color: #fff;
+  padding-top: 20px; 
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+
+.startTileOuter
+{
+  float: left;
+  width: 50%; 
+}
+
+.startTileOuter:before
+{
+  content: "";
+  display: block;
+  padding-top: 4px;
+  background: white;
+}
+
+/* Phone to portrait tablet */
+@media (max-width: 767px) 
+{ 
+  .startTileOuter
+  { /* One column per screen */
+    width:100%;
+  }
+}
+
+.startTileIndigoInner, .startTileOrangeInner, .startTileBlueInner, .startTileTealInner, .startTileGreenInner, .startTilePinkInner
+{
+  padding-bottom:100%; 
+  margin-bottom:-100%;
+  background-color: #3F51B5;
+  margin-right: 4px;
+  padding-right: 10px;
+  color: #fff;  
+}
+
+.startTileIndigoInner
+{
+  background-color: #3F51B5;
+}
+
+.startTileOrangeInner
+
+{
+  background-color: #FF5722;
+}
+
+.startTileBlueInner
+
+{
+  background-color: #03A9F4;
+}
+
+.startTileTealInner
+
+{
+  background-color: #009688;
+}
+
+.startTileGreenInner
+{
+  background-color: #4CAF50;
+}
+
+
+.startTilePinkInner
+
+{
+  background-color: #E91E63;
+}
+
+/* Footer */
+
+.footer
+{
+  background: #f2f2f2;
+}
+
+.footerInner
+{
+  font-size: 12px;
+  padding: 8px;
+  border-top: 1px solid #a2a2a2;
+  color: black;
+}
+
+/* Tables */
+/* CHTable is the CSS class assigned to all tables by default. Use the styles below to customize the default tables appearance */
+
+.CHTable
+{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+	border-collapse: collapse;
+  background: #fff;
+  color: #333;
+  border: 1px solid #E8FAF5;
+}
+
+.CHTable th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+  background: #E0F7FA; 
+}
+
+.CHTable td
+{
+	padding: 8px;
+  border-right: 1px solid #E8FAF5;
+	border-left: 1px solid #E8FAF5;
+}
+
+.CHTable tr:nth-child(even)
+{
+	background: #E0F7FA; 
+}
+
+/* Simple table */
+
+.tableSimple
+{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #BBDEFB;
+}
+
+.tableSimple th
+{
+	padding: 15px 10px 10px 10px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333;
+  text-align:left;
+}
+
+.tableSimple tbody
+{
+	background: transparent;
+}
+
+.tableSimple td
+{
+	padding: 10px;
+	color: #333;
+	border-top: 1px solid #BBDEFB;
+  text-align: left;
+}
+
+.tableSimple tfoot td
+{
+	text-align:left;
+}
+
+.tableSimple tbody tr:hover td
+{
+	background: #E0F7FA;
+}
+
+/* Table with both rows and columns having odd/even styles */
+
+.tableVerZebra
+{
+  font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: left;
+	border-collapse: collapse;
+  background: #E0F7FA;
+  color: #333;
+}
+
+.tableVerZebra th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 12px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	color: #333;
+  border-bottom: 1px solid #fff;
+  background: #E0F7FA;
+}
+
+.tableVerZebra tr:nth-child(odd)
+{
+	background: #BBDEFB;
+  border-bottom: 1px solid #fff;
+  color: #333;
+}
+
+.tableVerZebra td
+{
+	padding: 8px 15px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.tableVerZebra tfoot td
+{
+  background: #E0F7FA;
+  color: #333;
+}
+
+/* Info Box */
+
+.infoBox
+{
+  width: 100%;
+  background-color: #00B0FF;  
+  font-size: 0.8em;
+  color: #f9f9f9;
+}
+
+.infoBox p:last-child 
+{
+    margin-bottom: 0;
+}
+
+.infoBox p
+{
+    margin-top: 0;
+}
+
+.infoBoxImageCell
+{
+  width: 30px;
+  padding: 20px;  
+}
+
+.infoBoxText
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.warningBox
+{
+  width: 100%;
+  background-color: #FF7043;  
+  font-size: 0.8em;
+  color: #f9f9f9;
+}
+
+.warningBox p:last-child 
+{
+    margin-bottom: 0;
+}
+
+.warningBox p
+{
+    margin-top: 0;
+}
+
+.warningBoxImageCell
+{
+  width: 30px;
+  padding: 20px;
+}
+
+.warningBoxText
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;  
+}
+
+/* Navigation elements */
+
+.CHNavLinkTop
+{
+}
+
+.CHNavLinkNext
+{
+}
+
+.CHNavLinkPrevious
+{
+}
+
+.CHSeeAlso
+{
+}
+
+.CHBreadcrumb
+{
+}
+
+/* FAQ */
+
+.faqQuestionText
+{
+  font-size: 1.1em;
+  padding: 10px;
+  background-color: #E0F7FA;
+  padding-left: 15px;
+}
+
+.faqAnswer
+{
+  padding-left: 10px;
+}
+

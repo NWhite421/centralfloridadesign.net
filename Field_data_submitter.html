@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Documentation - Field Data Submitter</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="Styles/style.css" />
+      <link rel="icon" href="Images/Florida.png" type="image/x-icon">
+      <script src="Scripts/script.js"></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="h1" href="#overview" onclick="closeNav()">Overview</a>
+      <a class="h1" href="#general_use" onclick="closeNav()">General Usage</a>
+      <a class="h2" href="#main_screen" onclick="closeNav()">Main Window</a>
+      <a class="h3" href="#job_number" onclick="closeNav()">Job Number</a>
+      <a class="h3" href="#purpose" onclick="closeNav()">Purpose</a>
+      <a class="h3" href="#files" onclick="closeNav()">Files</a>
+      <a class="h3" href="#note" onclick="closeNav()">Note</a>
+      <a class="h2" href="#method_screens" onclick="closeNav()">Method-Specific actions</a>
+      <a class="h1" href="#settings" onclick="closeNav()">Settings</a>
+      <a class="h1" href="#Installation" onclick="closeNav()">Installation</a>
+      <a class="h1" href="#first_run" onclick="closeNav()">First-Run Setup</a>
+      <a class="h2" href="#email_settings" onclick="closeNav()">E-Mail Settings</a>
+      <a class="h2" href="#tcp_settings" onclick="closeNav()">TCP Settings</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="page-container">
+      <header>
+        <button onclick="openNav()">CONTENTS</button>
+        <p class="headText">Field Data Submitter</p>
+      </header>
+      <div id="content-wrap">
+        <h1 id="overview">Overview</h1>
+        <p> The <b>Field Data Submitter</b> allows a party chief in the field to quickly, efficiently, and accurately send in data to office personnel. This application's main design philosophy is <i>Usability in field conditions with simple layout, easy access, and redundancy.</i> This means that this program strives to be straight forward, easy to use on field tablets, and be hard to fail or have an error. The application composes of an easy-to-use interface with built-in checks and securities. These features prevent accidental e-mail / data submissions as well as accidental touch protections.<br /><br />If you have any questions, comments, or suggestions; please e-mail me at <a href="mailto:nwhite@hnhsurvey.com">nwhite@hnhsurvey.com</a></p>
+        <h2 id="main_screen">Main Window</h2>
+        <div style="text-align: center;">
+          <a href="Images/field data submitter/main window.png">
+            <img class="screenshot" src="Images/field data submitter/main window.png" alt="..The main window of the program (0.9.1 debug)." style="width: 600px;" />
+          </a>
+        </div>
+        <p>The main screen is where all the general actions take place. There are four things the user has to worry about; <i>Job Number, Purpose, Files, Note</i>. Ensuring that just this information is correctly inputted removes the possibility of messing up the "back-end" of the process. Further, if using the E-Mail method of data submission, this will automatically pre-format the e-mail to work with <a href="">E-Mail Parser</a> application. For more information on this, see <a href="#settings">Settings</a>.</p>
+        <h4 id="job_number">Job Number</h4>
+        <p>The job number is the most important thing that you can enter. If this is wrong, the data you send in can be placed in the wrong project or not be fully processed at all.</p>
+        <table class="warningBox" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="warningBoxImageCell">
+                <img alt="Warning" src="Images/warning.png" />
+              </td>
+              <td class="warningBoxText">
+                Ensure you enter the correct job number before sending the data. Otherwise, you might look dumb.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>You can enter the job number(s) one of two ways. The first is to just type the job number. The program will notify you if the number is not correctly inputted in the <i>yy-mm-nnn</i> format. If you have only one job number to submit, you can either leave this information in the box or click on "ADD" under the list to add the job number to the list. If you have multiple projects with one data submission, you <b>MUST</b> add each job number to the list using the "ADD" button under the job number list.<br />If you have a job number you wish to remove from the list, select the number and hit remove. This will automatically remove the number from the list.</p>
+        <h4 id="purpose">Purpose</h4>
+        <p>The purpose is just a reason for the data. In other words, why were you out there? You can either select a preset option from the dropdown list or type in your own value.</p>
+        <h4 id="files">Files</h4>
+        <p>The files you wish to send in. This can include your text file, AutoCAD® file, or anything else (including pictures). When you press "ADD", a dialog will open to select files (you can select multiple at once). To remove a file, select the file in the list and hit remove. Additionally, the initial directory can be changed via the <a href="#defaultDir">Default Directory</a> setting in the options menu.</p>
+        <h4 id="note">Note</h4>
+        <p>Any additional message you want to send about the data. If installed, the office personnel using <a href="">AutoCAD® Civil 3D® Plugin</a> will see the note when they import the points into CAD. Please keep it short and to the point.
+        <h2 id="method_screens">Method-Specific screens</h2>
+        <table class="infoBox" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="infoBoxImageCell">
+                <img alt="Information" src="Images/info.png" />
+              </td>
+              <td class="infoBoxText">
+                Information to be added.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h1 id="settings">Settings</h1>
+        <p id="defaultDir">The default directory...</p>
+        <h1 id="Installation">Installation</h1>
+        <h1 id="first_run">First Run Setup</h1>
+        <h2 id="email_settings">E-Mail Settings</h2>
+        <h2 id="tcp_settings">TCP Settings</h2>
+        <table class="warningBox" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td class="warningBoxImageCell">
+                <img alt="Warning" src="Images/warning.png" />
+              </td>
+              <td class="warningBoxText">
+                Not implemented in Version 1.0.0.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <footer id="footer">
+        <p>Copyright Central Florida Design Group 2020 ©
+      </footer>
+    </div>
+  </body>
+</html>
